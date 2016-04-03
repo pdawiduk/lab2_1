@@ -12,12 +12,13 @@ import static org.junit.Assert.*;
  */
 public class BinarySearchTest {
 
-    int[] seq = {0,1,2,3,4,5,6};
+    int[] seq1 ={2};
+    int[] seq2 = {0,1,2,3,4,5,6};
+    IllegalArgumentException testException = new IllegalArgumentException();
 
     @Test
-    public void search() throws Exception {
-
-        Assert.assertEquals("( elem at position 2)",BinarySearch.search(1,seq));
+    public final void search() throws Exception {
+        Assert.assertEquals("elem not found",BinarySearch.search(1,seq1).toString());
     }
 
 }
