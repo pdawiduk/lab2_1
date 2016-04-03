@@ -23,7 +23,7 @@ public class BinarySearchTest {
         Assert.assertThat("( elem at position 1)",is(BinarySearch.search(0,seq2).toString()));
         Assert.assertThat("( elem at position "+seq2.length+")",is(BinarySearch.search(6,seq2).toString()));
         Assert.assertThat("( elem at position 4)",is(BinarySearch.search(3,seq2).toString()));
-        Assert.assertEquals("elem not found",BinarySearch.search(32,seq2).toString());
+        Assert.assertThat("elem not found",is(BinarySearch.search(32,seq2).toString()));
     }
 
 }
