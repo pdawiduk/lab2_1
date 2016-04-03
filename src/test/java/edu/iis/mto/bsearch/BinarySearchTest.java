@@ -20,7 +20,7 @@ public class BinarySearchTest {
     public final void testSearch() throws Exception {
         Assert.assertThat("( elem at position 1)",is(BinarySearch.search(2,seq1).toString()));
         Assert.assertThat("elem not found",is(BinarySearch.search(1,seq1).toString()));
-        Assert.assertEquals("( elem at position 1)",BinarySearch.search(0,seq2).toString());
+        Assert.assertThat("( elem at position 1)",is(BinarySearch.search(0,seq2).toString()));
         Assert.assertEquals("( elem at position "+seq2.length+")",BinarySearch.search(6,seq2).toString());
         Assert.assertEquals("( elem at position 4)",BinarySearch.search(3,seq2).toString());
         Assert.assertEquals("elem not found",BinarySearch.search(32,seq2).toString());
