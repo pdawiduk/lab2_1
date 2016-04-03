@@ -18,13 +18,13 @@ public class BinarySearchTest {
     int med = seq2.length/2;
 
     @Test
-    public final void search() throws Exception {
+    public final void testSearch() throws Exception {
         Assert.assertEquals("( elem at position 1)",BinarySearch.search(2,seq1).toString());
         Assert.assertEquals("elem not found",BinarySearch.search(1,seq1).toString());
         Assert.assertEquals("( elem at position 1)",BinarySearch.search(0,seq2).toString());
         Assert.assertEquals("( elem at position "+seq2.length+")",BinarySearch.search(6,seq2).toString());
         Assert.assertEquals("( elem at position 4)",BinarySearch.search(3,seq2).toString());
-
+        Assert.assertEquals("elem not found",BinarySearch.search(32,seq2).toString());
     }
 
 }
