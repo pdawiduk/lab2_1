@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 /**
@@ -17,7 +18,7 @@ public class BinarySearchTest {
 
     @Test
     public final void testSearch() throws Exception {
-        Assert.assertEquals("( elem at position 1)",BinarySearch.search(2,seq1).toString());
+        Assert.assertThat("( elem at position 1)",is(BinarySearch.search(2,seq1).toString()));
         Assert.assertEquals("elem not found",BinarySearch.search(1,seq1).toString());
         Assert.assertEquals("( elem at position 1)",BinarySearch.search(0,seq2).toString());
         Assert.assertEquals("( elem at position "+seq2.length+")",BinarySearch.search(6,seq2).toString());
