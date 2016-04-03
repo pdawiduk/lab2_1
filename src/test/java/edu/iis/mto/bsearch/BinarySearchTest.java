@@ -14,8 +14,6 @@ public class BinarySearchTest {
 
     int[] seq1 ={2};
     int[] seq2 = {0,1,2,3,4,5,6};
-    IllegalArgumentException testException = new IllegalArgumentException();
-    int med = seq2.length/2;
 
     @Test
     public final void testSearch() throws Exception {
