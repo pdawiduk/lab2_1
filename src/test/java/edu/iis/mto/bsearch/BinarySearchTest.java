@@ -18,6 +18,7 @@ public class BinarySearchTest {
 
     @Test
     public final void search() throws Exception {
+        Assert.assertEquals("( elem at position 1)",BinarySearch.search(2,seq1).toString());
         Assert.assertEquals("elem not found",BinarySearch.search(1,seq1).toString());
     }
 
